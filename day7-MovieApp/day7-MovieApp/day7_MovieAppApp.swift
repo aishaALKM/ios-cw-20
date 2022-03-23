@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct day7_MovieAppApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        WindowGroup (){
+            MoviesList()
         }
     }
 }
