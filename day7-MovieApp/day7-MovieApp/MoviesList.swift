@@ -10,10 +10,13 @@ import SwiftUI
 struct MoviesList: View {
     let movies = ["Encanto", "HomeAlone", "Ratatouille"]
     var body: some View {
+        NavigationView{
         List(movies, id: \.self){movie in
+            NavigationLink(destination: detailsView()){
             movieRow(movie: movie)
+            }
+            }.navigationBarTitle("Movies🎬")
         }
-  
     }
 }
 
